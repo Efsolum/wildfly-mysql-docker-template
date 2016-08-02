@@ -53,7 +53,7 @@ RUN chmod u+x /usr/local/bin/wildfly-build.bash
 RUN wildfly-build.bash
 RUN chown -R ${CONTAINER_USER}:${CONTAINER_USER} \${JBOSS_HOME}
 
-RUN which jboss-cli.sh
+RUN which domain.sh && domain.sh --version
 
 USER $CONTAINER_USER
 WORKDIR /home/$CONTAINER_USER
