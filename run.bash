@@ -50,7 +50,7 @@ docker run \
 			 --detach=true \
 			 --name='wildfly-web' \
 			 --publish='8080:8080' \
-			 --publish='8181:8181' \
+			 --publish='8443:8443' \
 			 --publish='9009:9009' \
 			 --publish='9990:9990' \
 			 "${PROJECT_NAME}/wildfly-${JAVA_VERSION}-${WILDFLY_VERSION}:latest"

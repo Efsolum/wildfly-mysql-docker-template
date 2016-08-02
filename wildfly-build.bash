@@ -58,8 +58,8 @@ RUN which jboss-cli.sh
 USER $CONTAINER_USER
 WORKDIR /home/$CONTAINER_USER
 
-# 9990 (administration), 8080 (HTTP listener), 8181 (HTTPS listener), 9009 (JPDA debug port)
-EXPOSE 9990 8080 8181 9009
+# 9990 (administration), 8080 (HTTP listener), 8443 (HTTPS listener), 9009 (JPDA debug port)
+EXPOSE 9990 8080 8443 9009
 CMD sh -c 'kill -STOP \$$'
 EOF
 
